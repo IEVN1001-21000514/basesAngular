@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProductos } from '../productos';
 
 @Component({
   selector: 'app-product-list',
@@ -10,12 +11,14 @@ export class ProductListComponent {
   imageWidth:number=200;
   imageMargin:number=2;
   muestraImg:boolean=true;
+  listFilter:string='';
 
   mostrarImagen():void{
     this.muestraImg=!this.muestraImg
   }
 
-  productos:any[]=[ {
+  productos:IProductos[]=[ 
+    {
     "ProductoId":1,
     "Modelo":"Sentra",
     "Descripcion":"2 puertas",
@@ -24,10 +27,10 @@ export class ProductListComponent {
     "Marca":"Audi",
     "Color":"Azul",
     "ImagenUrl":"https://media.architecturaldigest.com/photos/63079fc7b4858efb76814bd2/16:9/w_4000,h_2250,c_limit/9.%20DeLorean-Alpha-5%20%5BDeLorean%5D.jpgurl?sa=i&url=https%3A%2F%2Fwww.carwow.co.uk%2Fbest%2Fbest-supercars&psig=AOvVaw1m1fd6xquZl5B3SYeJKTLu&ust=1726886145569000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMizzru-0IgDFQAAAAAdAAAAABAE"
-  },
+  }, 
   {
     "ProductoId":2,
-    "Modelo":"A4",
+    "Modelo":"Porsche",
     "Descripcion":"4 puertas",
     "Year":"marzo 12 2021",
     "Precio":12000,
