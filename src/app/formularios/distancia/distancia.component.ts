@@ -6,6 +6,7 @@ import { FormGroup, FormControl, Validator, Validators } from '@angular/forms';
   templateUrl: './distancia.component.html',
   styleUrl: './distancia.component.css'
 })
+
 export class DistanciaComponent implements OnInit {
   formulario2!: FormGroup;
   resultado:number=0;

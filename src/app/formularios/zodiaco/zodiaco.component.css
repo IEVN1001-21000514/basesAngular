@@ -1,0 +1,74 @@
+form {
+  width: 50%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+ 
+input[type="number"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+ 
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ 
+button:hover {
+  background-color: #3e8e41;
+}
+ 
+p {
+  margin-top: 20px;
+}
+
+#textoResultado {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hacer que el formulario sea más ancho */
+.col-md-8 {
+  max-width: 700px;
+}
+
+/* Ajustes de la imagen */
+img {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Bordes y padding del resultado */
+#resultado {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Centrar todo el contenido dentro del formulario */
+form {
+  padding: 20px;
+}
+
+/* Margen inferior en los campos */
+.mb-3 {
+  margin-bottom: 20px;
+}

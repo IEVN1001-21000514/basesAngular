@@ -7,7 +7,6 @@ import { IProductos } from '../productos';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  
   imageWidth:number=200;
   imageMargin:number=2;
   muestraImg:boolean=true;

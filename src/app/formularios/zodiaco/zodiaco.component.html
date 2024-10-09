@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <!-- Formulario -->
+        <div class="col-md-8 mb-4">
+            <h1 class="text-center">Datos Personales</h1>
+            <form [formGroup]="formularioZodiaco">
+                <div class="mb-3">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" formControlName="nombre" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido1">Apellido Paterno:</label>
+                    <input id="apellido1" formControlName="apellido1" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido2">Apellido Materno:</label>
+                    <input id="apellido2" formControlName="apellido2" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label>Fecha de Nacimiento:</label>
+                    <div class="d-flex gap-2">
+                        <input formControlName="dia" type="text" placeholder="Día" class="form-control">
+                        <input formControlName="mes" type="text" placeholder="Mes" class="form-control">
+                        <input formControlName="anio" type="text" placeholder="Año" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>Sexo:</label>
+                    <div>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        
+                    </div>
+                </div>
+                <button (click)="ImprimirZodiaco()" class="btn btn-primary w-100">Imprimir</button>
+            </form>
+        </div>
+
+        <!-- Resultado -->
+        <div class="col-md-4">
+            <h3 class="text-center">El resultado es:</h3>
+            <div id="resultado" class="text-center p-4 border rounded">
+                <p id="textoResultado" class="fs-4">{{ resultado }}</p>
+                <img *ngIf="imagenUrl" [src]="imagenUrl" class="img-fluid mt-3">
+            </div>
+        </div>
+    </div>
+</div>
